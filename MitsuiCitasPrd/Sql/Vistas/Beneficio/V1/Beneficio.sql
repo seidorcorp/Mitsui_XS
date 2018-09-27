@@ -1,4 +1,4 @@
---Prueba
+--Prueba dedmeomde
 DROP VIEW "MITSUI_CITAS_PRD"."VBeneficio" ;
 CREATE VIEW "MITSUI_CITAS_PRD"."VBeneficio" 
  AS select
