@@ -1,0 +1,13 @@
+{
+    "description": "Activa o desactiva noticias, eventos, beneficios",
+    "action": "MitsuiCitasPrd.Service.BathActivaciones:BathActivacionesTxService.xsjs::activacionesBath",
+    "schedules": [
+       {
+          "description": "Activa o desactiva noticias, eventos, beneficios",
+          "xscron": "* * * * 12 00 00",
+          "parameter": {
+             "stock": "SAP.DE"
+             }
+       }
+    ]
+}

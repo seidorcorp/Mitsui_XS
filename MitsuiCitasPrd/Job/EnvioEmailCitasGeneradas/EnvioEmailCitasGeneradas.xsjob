@@ -1,0 +1,13 @@
+{
+    "description": "Envia email de las citas generadas",
+    "action": "MitsuiCitasPrd.Service.EnvioEmailCitas:BathEnvioEmailCitasTxService.xsjs::enviarEmailCitasBath",
+    "schedules": [
+       {
+          "description": "Envia email de las citas generadas",
+          "xscron": "* * * * * * 59",
+          "parameter": {
+             "stock": "SAP.DE"
+             }
+       }
+    ]
+}

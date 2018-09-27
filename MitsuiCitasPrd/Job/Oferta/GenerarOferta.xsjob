@@ -1,0 +1,13 @@
+{
+    "description": "Genera las ofertas",
+    "action": "MitsuiCitasPrd.Service.BathProcesarOfertas:BathProcesarOfertasTxService.xsjs::procesarOfertasBath",
+    "schedules": [
+       {
+          "description": "Genera las ofertas",
+          "xscron": "* * * * * * 59",
+          "parameter": {
+             "stock": "SAP.DE"
+             }
+       }
+    ]
+}

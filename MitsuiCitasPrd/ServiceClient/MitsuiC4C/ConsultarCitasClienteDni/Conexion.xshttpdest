@@ -1,0 +1,8 @@
+host = "my317791.crm.ondemand.com";
+port = 443; 
+pathPrefix = "";
+authType = basic;
+useSSL = true;
+timeout = 0;
+sslHostCheck = true;
+sslAuth = anonymous;

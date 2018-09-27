@@ -1,0 +1,11 @@
+service namespace "MITSUI_AUDITORIA_PRD" { 
+	"MITSUI_AUDITORIA_PRD"."Auditoria" as "Auditoria";
+	"MITSUI_AUDITORIA_PRD"."VProceso" as "VProceso" key ("Id")
+		create forbidden
+		update forbidden
+		delete forbidden;
+	"MITSUI_AUDITORIA_PRD"."VAplicacion" as "VAplicacion" key ("Id")
+		create forbidden
+		update forbidden
+		delete forbidden;
+} 

@@ -1,0 +1,10 @@
+host = "mitsuib1747ff0c.us1.hana.ondemand.com";
+port = 443; 
+pathPrefix = "/MitsuiAuditoriaPrd/Service/Auditoria/AuditoriaService.xsjs";
+useSSL = true;
+sslAuth = anonymous;
+authType = none;
+useProxy = false;
+proxyHost ="localhost";
+proxyPort = 20003;
+timeout = 0;

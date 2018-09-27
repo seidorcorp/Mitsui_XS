@@ -1,0 +1,10 @@
+host = "documentserviceq8wpzjji9u.us1.hana.ondemand.com";
+port = 443; 
+pathPrefix = "/documentservice/util/EnvioCorreo";
+useSSL = true;
+sslAuth = anonymous;
+authType = none;
+useProxy = false;
+proxyHost ="localhost";
+proxyPort = 20003;
+timeout = 0;

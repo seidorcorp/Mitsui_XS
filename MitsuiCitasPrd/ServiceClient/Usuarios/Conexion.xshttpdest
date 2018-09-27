@@ -1,0 +1,10 @@
+host = "ax6ozbyep.accounts.ondemand.com";
+port = 443; 
+pathPrefix = "/service/scim/Users";
+useSSL = true;
+sslAuth = anonymous;
+authType = none;
+useProxy = false;
+proxyHost = "";
+proxyPort = 0;
+timeout = 0;

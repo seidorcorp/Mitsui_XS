@@ -1,0 +1,28 @@
+# Mensajes Genericos
+# Mensaje Ok
+code.idf1=1
+msj.idf1=OK
+# Mensajes Errores Funcionales
+code.idf2=2
+msj.idf2=No se encontro información
+code.idf3=3
+msj.idf3=No se registro correctamente
+code.idf4=4
+msj.idf4=Falta parametros de Auditoria : {0}
+code.idf5=5
+msj.idf5=Solo se permite contenido json
+code.idf6=6
+msj.idf6=No se envio información para procesar
+
+
+# Mensajes Errores Tecnicos
+code.idt1=-1
+msj.idt1=Error en BD: {0}
+code.idt2=-2
+msj.idt2=Error en el Proceso: {0}
+code.idt3=-3
+msj.idt3=Error en el Servicio: {0}
+code.idt4=-4
+msj.idt4=Error al procesar parametros de Auditoria: {0}
+code.idt5=5
+msj.idt5=Metodo Http no soportado

@@ -1,0 +1,67 @@
+service namespace "MITSUI_CITAS_PRD" { 
+	"MITSUI_CITAS_PRD"."VGenericaTabla" as "VGenericaTabla" key ("Id")
+		create forbidden
+		update forbidden
+		delete forbidden;
+	          
+	"MITSUI_CITAS_PRD"."VGenericaCampo" as "VGenericaCampo" key ("Id")
+		create forbidden
+		update forbidden
+		delete forbidden;
+ 		                    
+	"MITSUI_CITAS_PRD"."VUsuario" as "VUsuario" key ("Id")
+		create forbidden
+		update forbidden
+		delete forbidden;	
+	                       
+	"MITSUI_CITAS_PRD"."VBeneficio" as "VBeneficio" key ("Id")
+		create forbidden
+		update forbidden
+		delete forbidden;
+	  
+	"MITSUI_CITAS_PRD"."VNoticiaInterna" as "VNoticiaInterna" key ("Id")
+		create forbidden
+		update forbidden
+		delete forbidden;
+		 
+	"MITSUI_CITAS_PRD"."VNoticiaExterna" as "VNoticiaExterna" key ("Id")
+		create forbidden
+		update forbidden
+		delete forbidden;
+	
+	"MITSUI_CITAS_PRD"."VEvento" as "VEvento" key ("Id")
+		create forbidden
+		update forbidden
+		delete forbidden;
+		
+	"MITSUI_CITAS_PRD"."VNotificacion"  as "VNotificacion" key ("Id")
+		create forbidden
+		update forbidden
+		delete forbidden;
+	
+	"MITSUI_CITAS_PRD"."VTaller"  as "VTaller" key ("Id")
+		create forbidden
+		update forbidden
+		delete forbidden;
+	
+	"MITSUI_CITAS_PRD"."VRepuesto"  as "VRepuesto" key ("Id")
+		create forbidden
+		update forbidden
+		delete forbidden;
+	
+	"MITSUI_CITAS_PRD"."VAccesorio"  as "VAccesorio" key ("Id")
+		create forbidden
+		update forbidden
+		delete forbidden;
+	
+	"MITSUI_CITAS_PRD"."VProducto"  as "VProducto" key ("Id")
+		create forbidden
+		update forbidden
+		delete forbidden;
+	
+	"MITSUI_CITAS_PRD"."VCitaPlaca"  as "VCitaPlaca" key ("IdCorrelativo")
+		create forbidden
+		update forbidden
+		delete forbidden;
+		
+} 

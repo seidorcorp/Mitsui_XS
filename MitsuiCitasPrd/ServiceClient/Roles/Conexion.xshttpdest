@@ -1,0 +1,10 @@
+host = "api.us1.hana.ondemand.com";
+port = 443; 
+pathPrefix = "";
+useSSL = true;
+sslAuth = anonymous;
+authType = none;
+useProxy = false;
+proxyHost = "";
+proxyPort = 0;
+timeout = 0;

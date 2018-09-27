@@ -1,0 +1,13 @@
+{
+    "description": "Generar Horario de Taller",
+    "action": "MitsuiCitasPrd.Service.BathTallerCalendario:BathTallerCalendarioTxService.xsjs::procesarTallerHorarioBath",
+    "schedules": [
+       {
+          "description": "Generar Horario de Taller",
+          "xscron": "* * * * 5 0 59",
+          "parameter": {
+             "stock": "SAP.DE"
+             }
+       }
+    ]
+}

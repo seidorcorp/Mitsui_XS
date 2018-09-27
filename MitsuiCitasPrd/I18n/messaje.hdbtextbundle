@@ -1,0 +1,81 @@
+# Mensajes Genericos
+# Mensaje Ok
+code.idf1=1
+msj.idf1=OK
+# Mensajes Errores Funcionales
+code.idf2=2
+msj.idf2=No se encontro información
+code.sincontenido.idf2=2
+msj.sincontenido.idf2=No se encontro información {0}
+code.idf3=3
+msj.idf3=No se registro correctamente
+code.idf4=4
+msj.idf4=no tiene permisos para ejecutar el servicio
+code.idf5=5
+msj.idf5=Solo se permite contenido json
+code.idf6=6
+msj.idf6=No se envio información para procesar
+code.idf7=7
+msj.idf7=Registro Duplicado
+code.idf8=8
+msj.idf8=Existen valores duplicados, favor de revisar
+code.idf9=9
+msj.idf9=Acción no soportada
+code.idf10=10
+msj.idf10=Falta parametro : {0}
+code.idt11=11
+msj.idt11= El Registro ya Existe: {0}
+code.idf12=12
+msj.idf12=Se necesito el numero de transacción
+
+
+# Mensajes Errores Tecnicos
+code.idt1=-1
+msj.idt1=Error en BD: {0}
+code.idt2=-2
+msj.idt2=Error en el Proceso: {0}
+code.idt3=-3
+msj.idt3=Error en el Servicio: {0}
+code.idt4=-4
+msj.idt4=Error al procesar parametros de Auditoria: {0}
+code.idt5=-5
+msj.idt5=Metodo Http no soportado
+code.idt6=-6
+msj.idt6=Ocurrio un error en el servicio auditoria : {0}
+code.idt10=-10
+msj.idt10=Ocurrio un error en el servicio sap {0} : {1}
+
+msj.validausuario.idf1=No se pudo autenticar vuelva a intentarlo.
+
+code.crear.rol.idf2=208
+msj.crear.rol.idf2=No se pudo crear el rol : {0}
+
+code.eliminar.rol.idf2=209
+msj.eliminar.rol.idf2=No se pudo eliminar el rol : {0}
+
+msj.crear.usuario.idf1=Registro Exitoso, favor de revisar su  bandeja  de correo ingresado y seguir las instrucciones. 
+msj.recuperar.usuario.idf1=Favor de revisar su bandeja de correo ingresado y seguir las instruciones.
+msj.recuperar.usuario.idf2=No se pudo enviar el correo. Favor de ponerse en contacto con soporte tecnico.
+
+msj.validar.express.locales=No existe talleres express.
+msj.validar.express.horario=No existe horarios express configurados para el taller seleccionado.
+msj.validar.express.hora=No existe mantenimiento express para la hora seleccionada.
+msj.validar.express.disponible=No hay mantenimiento express disponible para el taller seleccionado.
+msj.validar.modelo=No existe el id del modelo de auto seleccionado.
+msj.validar.express.mod.taller=No existe el mantenimiento express para el modelo de auto en el taller seleccionado.
+msj.validar.express.mod.mant=No existe el mantenimiento express para la clase de mantenimiento seleccionado.
+
+msj.crear.cita.ok=Se creo la cita correctamente.
+msj.crear.cita.error=No se pudo crear la cita. {0}
+code.crear.cita.error.1=3 
+msj.crear.cita.error.1=No se pudo crear la cita. No se permite crear más citas en el intervalo de tiempo propuesto.
+msj.crear.cita.error.2=Cita no generada, por favor comuníquese llamando al 625-3072 para reservar su cita.
+msj.crear.oferta.ok=Se creo la oferta correctamente.
+msj.crear.oferta.error=No se pudo crear la oferta. {0}
+msj.lista.productos.error=No se pudo encontrar la lista de productos. {0}
+msj.cita.estado.error=No se pudo actualizar el estado de la cita. {0}
+msj.cita.update.ok=Se actualizó la cita correctamente.
+msj.cita.update.error=Cita en proceso, por favor inténtelo en unos minutos. {0}
+msj.oferta.crear.error=Termino el proceso de creación de oferta pero encontro errores. 
+msj.oferta.datos.error=No tiene configurado los datos de venta para el taller y marca seleccionada. 
+msj.oferta.estado.error=No se pudo actualizar el estado de la oferta. {0}

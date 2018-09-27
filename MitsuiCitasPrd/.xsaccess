@@ -1,0 +1,243 @@
+{
+    "exposed" : true, 
+    "cors" :                      
+            {
+             "enabled" : true
+            },  
+    "authentication" :       
+    [
+        {
+        "method": "Basic"   
+        }
+    ],
+    "rewrite_rules": [
+	        {
+	            "source": "/Service/UsuarioPortal/",
+	            "target": "/Service/Usuario/UsuarioTxService.xsjs?Accion=UsuarioPortal"
+	        },
+	        {
+	            "source": "/Service/UsuarioMovil/",
+	            "target": "/Service/Usuario/UsuarioTxService.xsjs?Accion=UsuarioMovil"
+	        },
+	        {
+	            "source": "/Service/Usuario/(\\d+)",
+	            "target": "/Service/Usuario/UsuarioTxService.xsjs?Accion=ActualizarUsuario&Id=$1"
+	        },
+	        {
+	            "source": "/Service/UsuarioDel/",
+	            "target": "/Service/Usuario/UsuarioTxService.xsjs?Accion=EliminarUsuario"
+	        },
+	        {
+	            "source": "/Service/NoticiaExterna/",
+	            "target": "/Service/NoticiaExterna/NoticiaExternaTxService.xsjs?Accion=RegistrarNotExterna"
+	        },
+	        {
+	            "source": "/Service/NoticiaExterna/(\\d+)",
+	            "target": "/Service/NoticiaExterna/NoticiaExternaTxService.xsjs?Accion=ActualizarNoticiaExterna&Id=$1"
+	        },
+	        {
+	            "source": "/Service/NoticiaExternaDel/",
+	            "target": "/Service/NoticiaExterna/NoticiaExternaTxService.xsjs?Accion=EliminarNoticiaExterna"
+	        },
+	        {
+	            "source": "/Service/NoticiaInterna/",
+	            "target": "/Service/NoticiaInterna/NoticiaInternaTxService.xsjs?Accion=RegistrarNoticiaInterna"
+	        },
+	        {
+	            "source": "/Service/NoticiaInterna/(\\d+)",
+	            "target": "/Service/NoticiaInterna/NoticiaInternaTxService.xsjs?Accion=ActualizarNoticiaInterna&Id=$1"
+	        },
+	        {
+	            "source": "/Service/NoticiaInternaDel/",
+	            "target": "/Service/NoticiaInterna/NoticiaInternaTxService.xsjs?Accion=EliminarNoticiaInterna"
+	        },
+	        {
+	            "source": "/Service/Evento/",
+	            "target": "/Service/Evento/EventoTxService.xsjs?Accion=RegistrarEvento"
+	        },
+	        {
+	            "source": "/Service/Evento/(\\d+)",
+	            "target": "/Service/Evento/EventoTxService.xsjs?Accion=ActualizarEvento&Id=$1"
+	        },
+	        {
+	            "source": "/Service/EventoDel/",
+	            "target": "/Service/Evento/EventoTxService.xsjs?Accion=EliminarEvento"
+	        },
+	        {
+	            "source": "/Service/Taller/",
+	            "target": "/Service/Taller/TallerTxService.xsjs?Accion=RegistrarTaller"
+	        },
+	        {
+	            "source": "/Service/TallerMasivo/",
+	            "target": "/Service/Taller/TallerTxService.xsjs?Accion=RegistrarTallerMasivo"
+	        },
+	        {
+	            "source": "/Service/Taller/(\\d+)",
+	            "target": "/Service/Taller/TallerTxService.xsjs?Accion=ActualizarTaller&Id=$1"
+	        },
+	        {
+	            "source": "/Service/TallerDel/",
+	            "target": "/Service/Taller/TallerTxService.xsjs?Accion=EliminarTaller"
+	        },
+	        {
+	            "source": "/Service/Beneficio/",
+	            "target": "/Service/Beneficio/BeneficioTxService.xsjs?Accion=RegistrarBeneficio"
+	        },
+	        {
+	            "source": "/Service/Beneficio/(\\d+)",
+	            "target": "/Service/Beneficio/BeneficioTxService.xsjs?Accion=ActualizarBeneficio&Id=$1"
+	        },
+	        {
+	            "source": "/Service/BeneficioDel/",
+	            "target": "/Service/Beneficio/BeneficioTxService.xsjs?Accion=EliminarBeneficio"
+	        },
+	        {
+	            "source": "/Service/Notificacion/",
+	            "target": "/Service/Notificacion/NotificacionTxService.xsjs?Accion=RegistrarNotificacion"
+	        },
+	        {
+	            "source": "/Service/Notificacion/(\\d+)",
+	            "target": "/Service/Notificacion/NotificacionTxService.xsjs?Accion=ActualizarNotificacion&Id=$1"
+	        },
+	        {
+	            "source": "/Service/NotificacionDel/",
+	            "target": "/Service/Notificacion/NotificacionTxService.xsjs?Accion=EliminarNotificacion"
+	        },
+	        {
+	            "source": "/Service/Producto/",
+	            "target": "/Service/Producto/ProductoTxService.xsjs?Accion=RegistrarProducto"
+	        },
+	        {
+	            "source": "/Service/ProductoMasivo/",
+	            "target": "/Service/Producto/ProductoTxService.xsjs?Accion=RegistrarProductorMasivo"
+	        },
+	        {
+	            "source": "/Service/Producto/(\\d+)",
+	            "target": "/Service/Producto/ProductoTxService.xsjs?Accion=ActualizarProducto&Id=$1"
+	        },
+	        {
+	            "source": "/Service/ProductoDel/",
+	            "target": "/Service/Producto/ProductoTxService.xsjs?Accion=EliminarProducto"
+	        },
+	        {
+	            "source": "/Service/Repuesto/",
+	            "target": "/Service/Repuesto/RepuestoTxService.xsjs?Accion=RegistrarRepuesto&tipo=Repuesto"
+	        },
+	        {
+	            "source": "/Service/RepuestoMasivo/",
+	            "target": "/Service/Repuesto/RepuestoTxService.xsjs?Accion=RegistrarRepuestoMasivo&tipo=Repuesto"
+	        },
+	        {
+	            "source": "/Service/Repuesto/(\\d+)",
+	            "target": "/Service/Repuesto/RepuestoTxService.xsjs?Accion=ActualizarRepuesto&Id=$1&tipo=Repuesto"
+	        },
+	        {
+	            "source": "/Service/RepuestoDel/",
+	            "target": "/Service/Repuesto/RepuestoTxService.xsjs?Accion=EliminarRepuesto&tipo=Repuesto"
+	        },
+	        {
+	            "source": "/Service/AccesorioMasivo/",
+	            "target": "/Service/Repuesto/RepuestoTxService.xsjs?Accion=RegistrarAccesorioMasivo&tipo=Accesorio"
+	        },
+	        {
+	            "source": "/Service/AccesorioDel/",
+	            "target": "/Service/Repuesto/RepuestoTxService.xsjs?Accion=EliminarRepuesto&tipo=Accesorio"
+	        },
+	        {
+	            "source": "/Service/Accesorio/(\\d+)",
+	            "target": "/Service/Repuesto/RepuestoTxService.xsjs?Accion=ActualizarRepuesto&Id=$1&tipo=Accesorio"
+	        },
+	        {
+	            "source": "/Movil/Autenticacion/",
+	            "target": "/ServiceMovil/Usuario/AutenticacionRxService.xsjs?Accion=Autenticar"
+	        },
+	        {
+	            "source": "/Movil/PuntosMitsui/Cliente/(\\d+)",
+	            "target": "/ServiceMovil/Cliente/ClienteCnService.xsjs?Accion=ConsultarPuntosCliente&Id=$1"
+	        },
+	        {
+	            "source": "/Movil/HistorialCitas/",
+	            "target": "/ServiceMovil/Cliente/ClienteCnService.xsjs?Accion=ConsultarHistorialCitas"
+	        },
+	        {
+	            "source": "/Movil/Accesorios/",
+	            "target": "/ServiceMovil/Repuesto/RepuestoCnService.xsjs?Accion=ConsultarAccesorio"
+	        },
+	        {
+	            "source": "/Movil/Repuestos/",
+	            "target": "/ServiceMovil/Repuesto/RepuestoCnService.xsjs?Accion=ConsultarRepuesto"
+	        },
+	        {
+	            "source": "/Movil/Noticias/",
+	            "target": "/ServiceMovil/Noticia/NoticiaCnService.xsjs?Accion=ConsultarNoticia"
+	        },
+	        {
+	            "source": "/Movil/Eventos/",
+	            "target": "/ServiceMovil/Evento/EventoCnService.xsjs?Accion=ConsultarEvento"
+	        },
+	        {
+	            "source": "/Movil/Beneficios/",
+	            "target": "/ServiceMovil/Beneficio/BeneficioCnService.xsjs?Accion=ConsultarBeneficio"
+	        },
+	        {
+	            "source": "/Movil/Productos/",
+	            "target": "/ServiceMovil/Producto/ProductoCnService.xsjs?Accion=ConsultarProducto"
+	        },
+	        {
+	            "source": "/Movil/Usuarios/",
+	            "target": "/ServiceMovil/Usuario/UsuarioTxService.xsjs?Accion=UsuarioMovil"
+	        },
+	        {
+	            "source": "/Movil/RecuperarClave/",
+	            "target": "/ServiceMovil/Usuario/RecuperarClaveTxService.xsjs?Accion=RecuperarClave"
+	        },
+	        {
+	            "source": "/Movil/Taller/",
+	            "target": "/ServiceMovil/Taller/TallerCnService.xsjs?Accion=ConsultarTaller"
+	        },
+	        {
+	            "source": "/Movil/TallerCalendario/",
+	            "target": "/ServiceMovil/Taller/TallerCalendarioCnService.xsjs?Accion=ConsultarCalendarioTaller"
+	        },
+	        {
+	            "source": "/Movil/Generica/",
+	            "target": "/ServiceMovil/Generica/GenericaCnService.xsjs?Accion=ConsultarGenerica"
+	        },
+	        {
+	            "source": "/Movil/Vehiculo/",
+	            "target": "/ServiceMovil/Vehiculos/VehiculoCnService.xsjs?Accion=ConsultarVehiculo"
+	        },
+	        {
+	            "source": "/Movil/Express/",
+	            "target": "/ServiceMovil/Vehiculos/ExpressCnService.xsjs?Accion=ConsultarExpress"
+	        },
+	        {
+	            "source": "/Movil/CitasPendientes/",
+	            "target": "/ServiceMovil/Cliente/CitasPendientesCnService.xsjs?Accion=ConsultarCitasPendientes"
+	        },
+	        {
+	            "source": "/Movil/RegistrarCita/",
+	            "target": "/ServiceMovil/Cita/CitaTxService.xsjs?Accion=RegistrarCita"
+	        },
+	        {
+	            "source": "/Movil/ActualizarCita/",
+	            "target": "/ServiceMovil/Cita/CitaTxService.xsjs?Accion=ActualizarCita"
+	        },
+	        {
+	            "source": "/Movil/EliminarCita/",
+	            "target": "/ServiceMovil/Cita/CitaTxService.xsjs?Accion=EliminarCita"
+	        },
+	        {
+	            "source": "/Movil/Kilometraje/",
+	            "target": "/ServiceMovil/Vehiculos/VehiculoCnService.xsjs?Accion=UltimoKmVehiculo"
+	        },
+	        {
+	            "source": "/Service/CalendarioTallerCache/",
+	            "target": "/ServiceMovil/Taller/TallerCalendarioJavaCnService.xsjs?Accion=ConsultarCalendarioTaller"
+	        },
+	        {
+	            "source": "/Service/TallerCache/",
+	            "target": "/ServiceMovil/Taller/TallerJavaCnService.xsjs?Accion=ConsultarTaller"
+	        }
+        ]
+}

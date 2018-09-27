@@ -1,0 +1,9 @@
+host = "mitsui.prd";
+port = 8000; 
+pathPrefix = "";
+useSSL = false;
+authType = SamlAssertionPropagation;
+useProxy = true;
+proxyHost = "localhost";
+proxyPort = 20003;
+timeout = 0;

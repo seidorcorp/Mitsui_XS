@@ -1,0 +1,32 @@
+bd.esquema=MITSUI_CITAS_PRD
+package.project=MitsuiCitasPrd
+
+# Acceso a servicios SAP
+clave.ws.sap=VVNSX0M0QzpNMXRzdWkxQDIwMjE=
+
+# Acceso a servicios C4C
+clave.ws.c4c=dWludGVncmFkb3I6TTF0c3VpMUAyMDIw
+
+#Acceso a servicio Identity provider
+clave.api.identity=VDAwMDAwMjokU2VpZG9yJDIwMTg=
+
+#Acceso al Api Client para obtener token y roles
+clave.api.cliente.autorizacion=MWUyNTY3OTUtODk1OC0zMWM1LTlhZTAtZDA1ZDBjMGQyNmJiOjNkNDdmMzc3LTliMzUtM2Y0MC1hMTc4LWYzYTQ2MDI3YzE2MQ==
+
+# Clave acceso servicio Auditoria
+clave.servicio.auditoria=TUlUU1VJQ0lUQVNQUkQ6U2VpZG9yQFBlcnUkNzg5JA==
+
+id.estado.activo=23
+id.estado.bloqueado=24
+id.estado.eliminado=25
+id.estado.temporal=26
+
+codigo.tipo.tabla=T
+codigo.tipo.campo=C
+
+codigo.subcuenta.scp=q8wpzjji9u
+
+id.estado.cita.generada=1
+
+#Horas adelantado del servidor
+horas.adelantado.servidor=-5

@@ -1,0 +1,21 @@
+{
+    "exposed" : true,  
+     
+        "authentication" :       
+    [
+        {
+        "method": "Basic"   
+        }
+    ],
+    "rewrite_rules": [
+	        {
+	            "source": "/Service/Auditoria/(\\d+)/",
+	            "target": "/Service/Auditoria/AuditoriaCnService.xsjs?accion=$1"
+	        },
+	        {
+	            "source": "/Service/Auditoria",
+	            "target": "/Service/Auditoria/AuditoriaService.xsjs"
+	        }  
+        
+        ]
+}
