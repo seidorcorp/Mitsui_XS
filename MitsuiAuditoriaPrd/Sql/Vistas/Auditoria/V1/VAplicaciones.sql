@@ -5,3 +5,5 @@ AS select
 from ( select
 	 distinct A."Aplicacion" 
 	FROM "MITSUI_AUDITORIA_PRD"."Auditoria" A ) SA 
+
+-- Prueba
